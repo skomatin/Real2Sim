@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D World Mapping</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007acc;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+        .cta {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .cta button {
+            padding: 0.8rem 1.5rem;
+            background: #007acc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .cta button:hover {
+            background: #005fa3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to 3D World Mapping</h1>
+        <p>Transforming the way we build digital worlds.</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#use-cases">Use Cases</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container" id="about">
+        <h2>About Us</h2>
+        <p>We aim to revolutionize how 3D maps are built by leveraging crowd-sourced contributions from everyday users. Our vision is to make creating realistic virtual environments accessible and efficient for industries like gaming, AR/VR, and beyond.</p>
+    </div>
+
+    <div class="container" id="use-cases">
+        <h2>Use Cases</h2>
+        <ul>
+            <li>Immersive game design with realistic environments.</li>
+            <li>AR/VR applications that reflect real-world accuracy.</li>
+            <li>Virtual tourism and interactive education platforms.</li>
+        </ul>
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <p>Have ideas, feedback, or want to collaborate? Reach out to us below:</p>
+        <form action="https://formspree.io/f/{your-form-id}" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 3D World Mapping. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
