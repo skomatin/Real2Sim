@@ -13,9 +13,9 @@
             color: #333;
         }
         header {
-            background: #007acc;
+            background: linear-gradient(90deg, #007acc, #005fa3);
             color: #fff;
-            padding: 1rem 0;
+            padding: 1.5rem 0;
             text-align: center;
         }
         nav {
@@ -23,16 +23,22 @@
             display: flex;
             justify-content: center;
             gap: 2rem;
+            padding: 1rem 0;
+            background: #005fa3;
         }
         nav a {
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         .container {
             max-width: 800px;
             margin: 2rem auto;
-            padding: 1rem;
+            padding: 1.5rem;
             background: #fff;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
@@ -54,16 +60,30 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 1.1rem;
         }
         .cta button:hover {
             background: #005fa3;
         }
+        #pointcloud-container {
+            width: 100%;
+            height: 500px;
+            margin-top: 2rem;
+        }
     </style>
+    <script type="importmap">
+        {
+            "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.171.0/build/three.module.js"
+            }
+        }
+        </script>
+    <script type="module" src="/main.js"></script>
 </head>
 <body>
     <header>
         <h1>Welcome to 3D World Mapping</h1>
-        <p>Transforming the way we build digital worlds.</p>
+        <p>Transforming the way we build digital worlds, one video at a time.</p>
     </header>
 
     <nav>
@@ -84,6 +104,7 @@
             <li>AR/VR applications that reflect real-world accuracy.</li>
             <li>Virtual tourism and interactive education platforms.</li>
         </ul>
+        <div id="pointcloud-container"></div>
     </div>
 
     <div class="container" id="contact">
