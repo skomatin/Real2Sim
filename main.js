@@ -16,7 +16,7 @@ controls.dampingFactor = 0.25;
 controls.screenSpacePanning = false;
 
 const loader = new PLYLoader();
-loader.load('./house.ply', function (geometry) {
+loader.load('https://pub-220fe27fe73c46a6be648ab360ffa6b5.r2.dev/house.ply', function (geometry) {
     geometry.computeVertexNormals();
 
     const material = new THREE.PointsMaterial({ size: 0.005, color: 0x00aaff });
